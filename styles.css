@@ -1,0 +1,241 @@
+html {
+    background-color: white;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#companyName {
+    background-color: black;
+    color: white;
+    
+}
+
+#nav_logo {
+    width: 151.6px;
+    height: 51.8px;
+}
+
+nav {
+    width: 100%;
+
+}
+
+nav ul {
+    float: right;
+    font-family: Helvetica;
+}
+
+nav li {
+    display: inline-block;
+    width: 80px;
+    
+
+}
+
+/* About us */
+
+.about-us-wrapper {
+    display: grid;
+    grid-template-columns: 38.2% 61.8%;
+    /* using fibonacci ratios to display information and imgs */
+    font-family: Helvetica;
+    margin-top: 50px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.about-us-wrapper > div > img {
+    height: 50%;
+    float: right;
+    
+}
+
+/* styles for slide show */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  .container > h2 {
+      text-align: center;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /* End slide show CSS code */
+
+  /* Our clients wrapper */
+
+.our-clients-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+     }
+
+.our-clients-header {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 24px;
+    margin-top: 20px;
+    border-top: solid;
+}
+
+.box {
+    max-height: 200px;
+    
+}
+
+.box:hover {
+    opacity: 0.7;
+}
+
+/* to target elements inside other elements with class or id, target div
+   or class followed by space and then a selector
+*/
+
+#our-clients img {
+    /* make the imgs adhere to the limitations i have destowed upon it */
+    max-width: 61.8%;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+/* Contact us form */
+
+#contact-us-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 61.8%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 6em;
+    height: 3em;
+    font-size: 14px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-us-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+  }
+
+  form {
+      text-align: center;
+  }
+
+  footer {
+    height: 100px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }

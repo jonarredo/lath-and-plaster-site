@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>2022</title>
+</head>
+<body>
+    
+    <!-- Navigation bar / menu START -->
+    <nav>
+        <img id="nav_logo" src="logos/main_logo.png"/>
+
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation bar / menu END-->
+
+    <div class="about-us-wrapper">
+        <div>
+            <img src="logos/house-icon.webp" alt="One of our homes.">
+        </div>
+        <div>
+            <h2>WHO WE ARE</h2>
+            <p>
+                We are a medium sized lath and plastering contractor located in San Diego, California.  
+                We serve the stucco markets of San Diego County, Orange County, and parts of Greater Los Angeles.
+                We strive for customer satisfaction every day in everything we do.  We believe that if you take care of your clients, the bottom line takes care of itself.
+                
+                At JP Lath and Plastering, our motto is always “Our Clients Are Our Most Valuable Asset.” 
+            </p>
+        </div>
+    </div>
+
+
+    <!-- image gallery showcasing our works START -->
+
+    <!-- Container for the image gallery -->
+<div class="container">
+
+    <h2>OUR WORK</h2>
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="imgs/apt1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="imgs/apt2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="imgs/apt3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="imgs/home1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="imgs/home2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="imgs/home3.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="imgs/apt1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Apartment 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="imgs/apt2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Apartment 2">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="imgs/apt3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Apartment 3">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="imgs/home1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Single Family 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="imgs/home2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Single Family 2">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="imgs/home3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Single Family 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDESHOW END-->
+
+  <!-- Our Clients -->
+
+  <!-- A grid of 12 home builders -->
+    <div class="our-clients-header">
+        <h2>OUR CLIENTS</h2>
+    </div>
+
+    <div id="our-clients" class="our-clients-wrapper">
+        <div class="box">
+            <img src="logos/lennar-svg.svg" alt="Lennar">
+        </div>
+        <div class="box">
+            <img src="logos/dr-horton-svg.svg" alt="DR. HORTON">
+        </div>
+        <div class="box">
+            <img src="logos/pulte-homes-svg.svg" alt="PULTE HOMES">
+        </div>
+        <div class="box">
+            <img src="logos/kbhome-png.png" alt="KB HOMES">
+        </div>
+        <div class="box">
+            <img src="logos/tripointe-png.png" alt="Tri Pointe">
+        </div>
+        <div class="box">
+            <img src="logos/alliance-residential-png.png" alt="Alliance Residential">
+        </div>
+        <div class="box">
+            <img src="logos/taylor-morrison-svg.svg" alt="Taylor Morrison">
+        </div>
+        <div class="box">
+            <img src="logos/blackrock.svg" alt="Blackrock Investements">
+        </div>
+        <div class="box">
+            <img src="logos/brk-png.png" alt="Berkshire Hathaway Home Services">
+        </div>
+    </div>
+  </div>
+
+  <!-- contact us form -->
+  <div id="contact-us-header">
+      <h1>Contact us</h1>
+  </div>
+
+  <div class="container-us-container">
+    <form action="action_page.php">
+  
+      <label for="fname"></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+  
+      <label for=""></label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="subject"></label>
+      <textarea id="subject" name="subject" placeholder="email, phone number, and reason for contact" style="height:200px"></textarea> <br>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+  <footer>
+    <div>
+      <h3>@copyright by Jonathan Arredondo</h3>
+    </div>
+  </footer>
+
+  <script src="slideshow.js"></script>
+    
+</body>
+</html>
